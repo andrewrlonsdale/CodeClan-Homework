@@ -5,10 +5,17 @@ lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'P
 # 1. Work out how many stops there are in the array
 # puts lines.length()
 # 2. Return 'Edinburgh Park' from the array
-puts lines(1)
+# puts lines[1]
 # 3. How many ways can we return 'Princes Street' from the array?
 
+# puts lines.last
+
+# puts lines[4]
+ 
+# puts lines[-1]
+
 # 4. Work out the index position of 'Haymarket'
+puts lines.index("Princes Street")
 
 # 5. Add 'Airport' to the start of the array
 
