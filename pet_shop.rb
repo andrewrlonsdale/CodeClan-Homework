@@ -4,3 +4,6 @@ return name
 end
 
 
+def total_cash(sum)
+sum = @pet_shop[:admin][:total_cash]
+end
