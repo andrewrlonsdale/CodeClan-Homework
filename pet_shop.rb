@@ -25,15 +25,24 @@ def stock_count(count)
 end  
 
 def pets_by_breed(pets, breed)
-total = []
+  total = []
 
-for i in pets[:pets]
-  total.push(i)if i[:breed] == breed
+  for i in pets[:pets]
+    total.push(i)if i[:breed] == breed
+  end
+  return total
+end
 
-   
+def find_pet_by_name(pet_shop, name)
+  total = []
+
+  for i in pet_shop[:pets]
+    total.push(i) if i[:name] == name
+  end
+  return total.first()
 end
-return total
-end
+
+
 
 
 
