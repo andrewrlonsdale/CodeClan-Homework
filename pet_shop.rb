@@ -42,6 +42,15 @@ def find_pet_by_name(pet_shop, name)
   return total.first()
 end
 
+def remove_pet_by_name(pet_shop, name)
+  for i in pet_shop[:pets]
+    pet_shop[:pets].delete(i) if i[:name] == name
+  end
+end
+
+def add_pet_to_stock(pet_shop, new_pet)
+  pet_shop[:pets].push(new_pet)
+end
 
 
 
