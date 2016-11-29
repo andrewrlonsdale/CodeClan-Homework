@@ -20,14 +20,25 @@ class Library_Spec < MiniTest::Test
          library.book_details)
   end
 
-
-
-
-
-
-
-
-
-
-
+  # def test_details
+  #   library = LibraryDetails.new([
+  #     {"harry_potter" => {:student_name => "bob",
+  #      :date => "23/12/16"}},
+  #      {"lord_of_the_rings" => 
+  #       {:student_name => "Jeff", 
+  #         :date => "01/12/16"}}] )
+  #   library.details = "harry_potter"
+  #   assert_equal("harry_potter", library.details)
+  # end
 end
+
+
+
+
+
+
+
+
+
+
+
