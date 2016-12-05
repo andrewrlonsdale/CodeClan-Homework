@@ -47,6 +47,10 @@ update movies set show_time = '00:00' where title = 'Guardians of the Galaxy';
 
     DELETE FROM movies WHERE year >=2012;
 
+    DELETE FROM movies WHERE year <=2012;
+
+    DELETE FROM movies WHERE year = 2014;
 
 
+    DELETE FROM people WHERE id in (1, 3 ,5 ,19)
 
