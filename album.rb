@@ -63,7 +63,7 @@ class Album
     ('#{@title}', '#{@genre}', #{@artist_id}) where id = #{@id};
     "
     db.exec(sql)
-    db.close()
+    db.close() 
   end
 
 

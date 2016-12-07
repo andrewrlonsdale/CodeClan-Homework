@@ -1,5 +1,5 @@
 drop table if exists albums;
-drop table if exists artists;
+drop table if exists artists; 
 
 create table artists(
   id serial8 primary key,
