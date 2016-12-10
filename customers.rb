@@ -36,7 +36,7 @@ class Customer
 
   def films()
     sql = "SELECT films.* FROM films
-    INNER JOIN tickets ON tickets.film_id = film.id
+    INNER JOIN tickets ON tickets.film_id = films.id
     WHERE customer_id = #{@id};
     "
     return Film.get_many( sql )
