@@ -49,7 +49,7 @@ class Film
     ON t.film_id = f.id
     WHERE f.id = #{@id};
     "
-    return Customer.get_many( sql )    
+    # return Customer.get_many( sql )    
   end
 
 end

@@ -51,7 +51,7 @@ class Customer
     ON t.film_id = f.id
     WHERE c.id = #{@id};
     "
-    return Film.get_many( sql )
+    # return Film.get_many( sql )
     
   end
 
