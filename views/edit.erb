@@ -1,0 +1,55 @@
+<h1>Edit Recipe</h1>
+
+<form action="/food/<%= @food.id %>" method="post" >
+  <label>
+    name:
+    <input type="text"
+     name="name"
+     value="<%= @food.name %>"
+    />
+  </label>
+
+  <label>
+    country:
+    <select name="country">
+    <option <%= "selected" if @food.country == "Italian" %>
+     value="Italian">Italian</option>
+    <option <%= "selected" if @food.country == "Chinese" %>
+    value="Chinese">Chinese</option>
+    <option <%= "selected" if @food.country == "Indian" %>
+    value="Indian">Indian</option>
+    <option <%= "selected" if @food.country == "Japanese" %>
+    value="Japanese">Japanese</option>
+   
+    </select>
+  </label>
+
+  <label>
+    spicy:
+    <select name="spicy">
+    <option <%= "selected" if @food.spicy == "None" %>
+     value="None">None</option>
+    <option <%= "selected" if @food.spicy == "Mild" %>
+    value="Mild">Mild</option>
+    <option <%= "selected" if @food.spicy == "Medium" %>
+    value="Medium">Medium</option>
+    <option <%= "selected" if @food.spicy == "Hot" %>
+    value="Hot">Hot</option>
+   
+    </select>
+  </label>
+
+  <label>
+    ingredients:
+    <input type="text" name="ingredients" value="<%= @food.ingredients %>"/>
+  </label>
+
+  <label>
+    recipe:
+    <input type="text" name="recipe" value="<%= @food.recipe %>"/>
+  </label>
+  
+  <input type="submit" value="Update Recipe"/>
+
+</form>
+
