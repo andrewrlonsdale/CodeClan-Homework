@@ -23,7 +23,6 @@ public class CohortTest{
 
   @Test
   public void canFillClass(){
-    Students student = new Students();
     cohort.add(student);
     assertEquals(1, cohort.personCount());
   }
