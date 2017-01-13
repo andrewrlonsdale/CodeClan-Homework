@@ -1,4 +1,4 @@
-package lab;
+package card;
 
 public enum CardNumber{
 ACE,
