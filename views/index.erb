@@ -1,0 +1,10 @@
+<hi>Food Recipes</hi>
+<p><a href="/food/new">New Recipe</a></p>
+
+<% for food in @foods %>
+<p>Name: <%= food.name()%></p>
+<p>Country: <%= food.country()%> </p>
+<p>Spicy: <%= food.spicy() %></p>
+<p><a href="/food/<%= food.id %>" >Show Recipe</a></p>
+<hr>
+<% end %>

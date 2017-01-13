@@ -1,0 +1,13 @@
+<hi>Food Recipes</hi>
+
+<% for food in @foods %>
+  <% if food.country != @search %>
+    <p>Name: <%= food.name()%></p>
+    <p>Country: <%= food.country()%> </p>
+    <p>Spicy: <%= food.spicy() %></p>
+    <p><a href="/food/<%= food.id %>" >Show Recipe</a></p>
+    <hr>
+
+  <% end %>
+<% end %>
+

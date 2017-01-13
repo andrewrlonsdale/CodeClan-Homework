@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Recipes</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="/food">All Food Recipes</a>
+      </li>
+    </ul>
+    <form action="/food/search" method="post" >
+      <label>
+        Country:
+        <select name="country">
+          <option value="Italian">Italian</option>
+          <option value="Chinese">Chinese</option>
+          <option value="Indian">Indian</option>
+          <option value="Japanese">Japanese</option>
+        </select>
+      </label>
+    <input type="submit" value="Search"/>
+    </form>
+  </nav>
+  <%= yield %>
+</body>
+</html>
