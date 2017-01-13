@@ -1,8 +1,17 @@
 package card;
 
 public enum CardType{
-SPADES,
-HEARTS,
-DIAMONDS,
-CLUBS
-}
+ACE,
+TWO,
+THREE,
+FOUR,
+FIVE,
+SIX,
+SEVEN,
+EIGHT,
+NINE,
+TEN,
+ELEVEN,
+QUEEN,
+KING
+};
