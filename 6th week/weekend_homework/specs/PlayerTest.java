@@ -13,7 +13,7 @@ public class PlayerTest {
   }
 
   @Test
-  public void testHasName() {
+  public void playerCanHaveName() {
     assertEquals("Andrew", player.getName());
   }
 

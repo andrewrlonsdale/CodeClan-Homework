@@ -12,12 +12,12 @@ public class CardTest {
   }
 
   @Test
-  public void canHaveSuit(){
+  public void cardCanHaveSuit(){
     assertEquals(CardSuit.SPADES, card.getSuit());
   }
 
   @Test
-  public void canHaveType(){
+  public void cardCanHaveType(){
     assertEquals(CardType.KING, card.getType());
   }
 }
