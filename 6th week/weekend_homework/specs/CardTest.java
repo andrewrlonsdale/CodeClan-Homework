@@ -20,4 +20,8 @@ public class CardTest {
   public void cardCanHaveType(){
     assertEquals(CardType.KING, card.getType());
   }
+  @Test
+    public void canConvertTypeToInteger(){
+      assertEquals(14, card.typeToInteger());
+    }
 }

@@ -2,20 +2,23 @@ package card;
 
 public class Card {
 
-    private CardSuit suit;
-    private CardType type;
+  private CardSuit suit;
+  private CardType type;
 
-    public Card(CardSuit suit, CardType type) {
-      this.suit = suit;
-      this.type = type;
-    }
+  public Card(CardSuit suit, CardType type) {
+    this.suit = suit;
+    this.type = type;
+  }
 
-    public CardSuit getSuit(){
-      return this.suit;
-    }
+  public CardSuit getSuit(){
+    return this.suit;
+  }
 
-    public CardType getType(){
-      return this.type;
-    }
+  public CardType getType(){
+    return this.type;
+  }
 
+  public int typeToInteger(){
+    return (this.type.ordinal()+2); 
+  }
 }

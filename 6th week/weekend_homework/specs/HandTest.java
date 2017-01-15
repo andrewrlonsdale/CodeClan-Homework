@@ -20,15 +20,15 @@ public class HandTest {
 
     @Test
     public void canAddCards(){
-      Card card1 = new Card(CardSuit.SPADES, CardType.JACK);
+      Card card1 = new Card(CardSuit.SPADES, CardType.KING);
       hand.addCard(card1);
       assertEquals(1, hand.cardCount());
     }
 
     @Test
     public void canShowCard(){
-      Card card1 = new Card(CardSuit.HEARTS, CardValue.QUEEN);
-      Card card2 = new Card(CardSuit.SPADES, CardValue.ACE);
+      Card card1 = new Card(CardSuit.HEARTS, CardType.QUEEN);
+      Card card2 = new Card(CardSuit.SPADES, CardType.ACE);
       hand.addCard(card1);
       hand.addCard(card2);
       assertEquals(card1, hand.showCard(0));
@@ -36,12 +36,12 @@ public class HandTest {
 
     @Test
     public void canCalculateHandValue(){
-      Card card1 = new Card(CardSuit.SPADES, CardValue.JACK);
-      Card card2 = new Card(CardSuit.SPADES, CardValue.ACE);
+      Card card1 = new Card(CardSuit.SPADES, CardType.KING);
+      Card card2 = new Card(CardSuit.SPADES, CardType.ACE);
       hand.addCard(card1);
       hand.addCard(card2);
       int result = hand.calculateValue();
-      assertEquals(25, result);
+      assertEquals(16, result);
     }
 
   }
