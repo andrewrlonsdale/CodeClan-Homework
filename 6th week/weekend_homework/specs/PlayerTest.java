@@ -1,5 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.*;
+import player.*;
+
 
 public class PlayerTest {
 
