@@ -1,8 +1,9 @@
 import java.util.*;
 import specs.*;
-import player.*;
 import card.*;
-class Runner{
+import player.*;
+
+class Runner {
 
   public static void main(String[] args) {
     Game game = new Game();
