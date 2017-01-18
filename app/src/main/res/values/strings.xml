@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WordCounter</string>
+    <string name="get_word_count">Calculate</string>
+    <string name="num_words">words.</string>
+    <string name="get_words">Enter words here</string>
+
+</resources>
+
