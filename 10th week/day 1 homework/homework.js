@@ -4,13 +4,13 @@
 1;
 number
 /* 1.2 */
-    "cat";
+"cat";
 string
 /* 1.3 */
 true;
 boolean
 /* 1.4 */
-    [];
+[];
 object
 /* 1.5 */
 {};
@@ -31,7 +31,7 @@ undefined
 1;
 true
 /* 2.2 */
-    "cat";
+"cat";
 true
 /* 2.3 */
 true;
@@ -40,7 +40,7 @@ true
 NaN;
 false
 /* 2.5 */
-    [];
+[];
 true
 /* 2.6 */
 {};
@@ -49,7 +49,7 @@ true
 undefined;
 false
 /* 2.8 */
-    "";
+"";
 false
 /* 2.9 */
 0;
@@ -90,6 +90,7 @@ var firstElement = animals.shift;
 console.log(firstElement);
 // 5.2. Assign the last element to a variable
 var lastElement = animals.pop;
+// animals[animal.length-1]
 console.log(firstElement);
 // 5.3. Assign the length of an array to a variable
 var arraySize = animal.length;
@@ -112,7 +113,7 @@ while (i < vegetables.length) {
 }
 // 6.3 Loop again using a "for" with a counter
 for (var i = 0; i < vegetables.length; i++) {
-    console.log(animals[i]);
+    console.log(vegetables[i]);
 }
 // 6.4 Loop again using a "for of"
 for (var vegetable of vegetables) {
@@ -146,7 +147,7 @@ var accounts = [{
 // Write functions for the following tasks!
 // 7.1 Calculate the total cash in accounts
 var total = 0
-for (account of accounts) {
+for (var account of accounts) {
     total += account.amount;
 }
 console.log(total);
@@ -199,7 +200,7 @@ for (acc of accounts) {
 var total = 0;
 for (acc of accounts) {
     if (acc.type === 'business') {
-        total = total + acc.amount;
+        total += acc.amount;
     }
 }
 // 7.8 Find the largest personal account owner
