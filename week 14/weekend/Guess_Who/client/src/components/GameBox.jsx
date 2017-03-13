@@ -58,7 +58,7 @@ var GameBox = React.createClass({
      this.changeImageEnMass(forDeselection);
     },
 
-    handleCountry: function(e){
+    handleClick: function(e){
       var options= this.state.allSeeds
       e.preventDefault();
       var names =[]

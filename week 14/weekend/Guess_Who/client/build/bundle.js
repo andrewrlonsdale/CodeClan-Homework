@@ -19862,7 +19862,7 @@
 	    this.changeImageEnMass(forDeselection);
 	  },
 	
-	  handleCountry: function handleCountry(e) {
+	  handleClick: function handleClick(e) {
 	    var options = this.state.allSeeds;
 	    e.preventDefault();
 	    var names = [];
