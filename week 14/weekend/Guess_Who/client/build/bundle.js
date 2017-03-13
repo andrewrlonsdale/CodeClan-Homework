@@ -19762,7 +19762,7 @@
 	var GuessForm = __webpack_require__(160);
 	var CharactersBox = __webpack_require__(161);
 	var QuestionsForm = __webpack_require__(162);
-	var seeds = __webpack_require__(165);
+	var seeds = __webpack_require__(163);
 	
 	var GameBox = React.createClass({
 	  displayName: 'GameBox',
@@ -19975,7 +19975,7 @@
 	      }
 	    }
 	
-	    this.setState({ allBastards: all });
+	    this.setState({ allSeeds: all });
 	    return all;
 	    this.render();
 	  },
@@ -20233,7 +20233,7 @@
 	        React.createElement(
 	          'h3',
 	          null,
-	          this.props.data[9].Name
+	          this.props.data[8].Name
 	        )
 	      ),
 	      React.createElement(
@@ -20306,9 +20306,7 @@
 	module.exports = QuestionsForm;
 
 /***/ },
-/* 163 */,
-/* 164 */,
-/* 165 */
+/* 163 */
 /***/ function(module, exports) {
 
 	"use strict";

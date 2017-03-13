@@ -98,7 +98,7 @@ var CharactersBox = React.createClass({
         src={this.props.data[8].src}
         width="200px" 
         height="300px"/>
-        <h3>{this.props.data[9].Name}</h3>
+        <h3>{this.props.data[8].Name}</h3>
         </div>
 
         <div className="item">

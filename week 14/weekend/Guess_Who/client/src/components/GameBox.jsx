@@ -110,7 +110,7 @@ var GameBox = React.createClass({
           }
         }
       }
-      this.setState( { allBastards: all } )
+      this.setState( { allSeeds: all } )
       return all
       this.render();
     },

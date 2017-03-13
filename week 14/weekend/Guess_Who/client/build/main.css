@@ -2,6 +2,10 @@ body {
   background: #e23636;
 }
 
+img {
+  height:300px;
+  width: 200px;
+}
 
 .CharactersBox{
   text-align: center;
